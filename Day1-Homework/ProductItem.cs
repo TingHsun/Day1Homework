@@ -11,7 +11,7 @@ namespace ProductItem
         /// <param name="ProductList">商品列表</param>
         /// /// <param name="title">欄位名稱</param>
         /// /// <param name="setNumber">集合單位(多少商品為一組)</param>
-        internal List<int> GetSumResult<T>(IEnumerable<T> ProductList, string title, int setNumber)
+        internal IEnumerable<int> GetSumResult<T>(IEnumerable<T> ProductList, string title, int setNumber)
         {
             int count = 0;
             int sum = 0;
